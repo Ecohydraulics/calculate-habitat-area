@@ -1,0 +1,9 @@
+# Always prefer binary wheels so Rasterio installs with its bundled GDAL
+--prefer-binary
+
+# Core scientific stack
+numpy>=1.22,<2.0        # numerical arrays
+pandas>=1.5,<2.3        # CSV I/O and data handling
+
+# Geospatial raster I/O — the PyPI wheel already embeds GDAL (≥3.5)
+rasterio>=1.4,<2.0
